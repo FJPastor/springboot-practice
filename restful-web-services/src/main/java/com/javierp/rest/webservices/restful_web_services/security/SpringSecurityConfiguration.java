@@ -16,7 +16,7 @@ public class SpringSecurityConfiguration {
 		//2, si no esta autenticada . Se mueestra por defecto una pagina web del login
 //para importarlo usamos ctrl+shit+t buscamos Customizer de spring security vamos al metodo, boton derecho copy qualified name y lo pegamos arriba con el import static
 		http.httpBasic(withDefaults());
-		//3.3, CSRF -> POST. PUT afecta a estas dos, para poder usarlas tenemos que hacer esto:
+		//3.3, CSRF -> POST. PUT afecta a estas dos, para poder usarlas tenemos que hacer esto: y asi ya nos deja hacer post y put
 		http.csrf().disable();
 		
 		return http.build();
